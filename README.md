@@ -3,7 +3,7 @@
 - [Reconstruction Framework](#reconstruction-framework)
 - [Getting Started](#getting-started)
   - [Quick start: run the reconstruction procedure](#quick-start-run-the-reconstruction-procedure)
-
+  - [Exponential Scaling](#exponential-scaling)
 
 
 # Reconstruction Framework
@@ -23,4 +23,6 @@ Refer to the Manuscript, the steps below can get the results from Fig. 1 and 2.
 5. Run the 6th block for Spatial Reconstruction, **RevealHHetero1.m** is called to further separate the Jacobian to effective heterogeneity and asymmetric structural connectivity.
 6. Run the following blocks for validation and evaluation in **HetergeneousMainTestScript1.m**.
 
-7. 
+## Exponential Scaling
+
+
