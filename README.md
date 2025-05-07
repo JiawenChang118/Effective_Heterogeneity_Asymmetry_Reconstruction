@@ -19,7 +19,7 @@ The following provides a step-by-step instruction to simulate the neural mass mo
 Refer to the Manuscript, the steps below can get the results from Fig. 1 and 2.
 1. Open the main performing file, **HetergeneousMainTestScript1.m**.
 2. Run the first 4 blocks in the main performing file to create the model parameters, run the simulation and calculate the ground-truth Jacobian matrix.
-3. Run the 5th block for Temporal Reconstruction. This call function, **LinearReconst.m** to estimate hte Jacobian Matrix.
+3. Run the 5th block for Temporal Reconstruction. This call function, **LinearReconst.m** to estimate the Jacobian Matrix.
 5. Run the 6th block for Spatial Reconstruction, **RevealHHetero1.m** is called to further separate the Jacobian to effective heterogeneity and asymmetric structural connectivity.
 6. Run the following blocks for validation and evaluation in **HetergeneousMainTestScript1.m**.
 
