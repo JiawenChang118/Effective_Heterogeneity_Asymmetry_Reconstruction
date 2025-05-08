@@ -50,7 +50,7 @@ clear i j
 Jacob_est = LinearReconst(S,dt); % Estimating Jacobian Matrix
 
 %% Reconstruct spatial properties with Jacobian Matrix
-% y_st is the inverse of effective heterogeneity dH.
+% y_st is the inverse of effective heterogeneity.
 
 SC_sym = (SC + SC')/2;
 [y_st,w_recon,C_recon] = RevealHHetero1(SC_sym,Jacob_est,S_star,tau,gamma,G, J);
