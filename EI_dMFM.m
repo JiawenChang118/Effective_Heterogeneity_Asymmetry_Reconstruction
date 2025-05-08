@@ -14,20 +14,19 @@ I_b = p.Results.I_b;
 gamma = p.Results.gamma; 
 
 
-% 设置突触时间尺度
+% Synaptic timescale
 tau_e = tau(:,1);
 tau_i = tau(:,2);
 
-% 设置突触权重
+% Synaptic Weight
 w_E = w(:,1);
 w_I = w(:,2);
 w_IE = w(:,3);
 w_EI = w(:,4:3+29);
 w_EE = w(:,33:end);
 
-%% 进行模拟
-% 设置模拟时长
-tpre = ceil(10/dt);  % 预运行10s
+%% Simulation
+tpre = ceil(10/dt);
 tpost = ceil(T/dt);
 
 % S_E = 0.164757 * ones([n, tpost+tpre]);
@@ -38,7 +37,7 @@ eta_I = S_I;
 I_E = zeros([n, tpost+tpre]);
 I_I = zeros([n, tpost+tpre]);
 
-% EI_dMFM方程迭代
+% EI_dMFM
 for t=1:tpost+tpre-1
     eta_E(:,t) = sigma.*randn([n 1]).*sqrt(dt);
     eta_I(:,t) = sigma.*randn([n 1]).*sqrt(dt);
