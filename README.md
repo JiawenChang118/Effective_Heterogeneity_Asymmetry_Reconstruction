@@ -25,7 +25,7 @@ Refer to the Manuscript, the steps below can get the results from Fig. 1 and 2.
 7. Run the following codes start from **Line 193: Replacement or tau & b from w & I** to Run the sample results at Fig. 4 and Fig. S3, illustrating the replacement of heterogeneity pairs. This will call function **dMFM_eq.m** to simulate the heterogeneous model B with tau_i and b_i.
 
 ## Exponential Scaling
-8. Open the script testing the sampling effect, **ErrorSampling**.
+8. Open the script testing the sampling effect, **ErrorSampling.m**.
 9. Run this file, will automatically plot the main results in Fig. 3.
 
 ## Hidden Inhibition
