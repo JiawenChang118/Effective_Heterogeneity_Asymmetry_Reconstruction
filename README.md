@@ -4,7 +4,7 @@
 - [Getting Started](#getting-started)
   - [Quick start: run the reconstruction procedure](#quick-start-run-the-reconstruction-procedure)
   - [Exponential Scaling](#exponential-scaling)
-
+  - [Hidden Inhibition](#hidden-inhibition)
 
 # Reconstruction Framework
 
@@ -20,9 +20,15 @@ Refer to the Manuscript, the steps below can get the results from Fig. 1 and 2.
 1. Open the main performing file, **HetergeneousMainTestScript1.m**.
 2. Run the first 4 blocks in the main performing file to create the model parameters, run the simulation and calculate the ground-truth Jacobian matrix.
 3. Run the 5th block for Temporal Reconstruction. This call function, **LinearReconst.m** to estimate the Jacobian Matrix.
-5. Run the 6th block for Spatial Reconstruction, **RevealHHetero1.m** is called to further separate the Jacobian to effective heterogeneity and asymmetric structural connectivity.
-6. Run the following blocks until **Line193** for validation and evaluation in **HetergeneousMainTestScript1.m**.
+5. Run the 6th block for Spatial Reconstruction, **RevealHHetero1.m** is called to further separate the Jacobian to effective heterogeneity and asymmetric structural connectivity. (Actually you can run **RevealHHetero2.m which is a compact version of spatial reconstruction, only reconstruct asymmetric SC and effective heterogeneity.)
+6. Run the following blocks until **Line 192** for validation and evaluation in **HetergeneousMainTestScript1.m**.
+7. Run the following codes start from **Line 193: Replacement or tau & b from w & I** to Run the sample results at Fig. 4 and Fig. S3, illustrating the replacement of heterogeneity pairs.
 
 ## Exponential Scaling
-7. 
+8. Open the script testing the sampling effect, **ErrorSampling**.
+9. Run this file, will automatically plot the main results in Fig. 3.
 
+## Hidden Inhibition
+10. Open the script to run the final section of hidden inhibition effect, **EI_HetergeneousMainTestScript1.m**.
+11. This script focus on Model C with local inhibitory populations, and only go through the reconstruction with excitatory population activity.
+12. Running this file will generate results in Fig. 5.
