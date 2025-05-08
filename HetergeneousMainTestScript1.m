@@ -333,7 +333,6 @@ xticks(1:1:N);
         '7A','46d','10','9/46v','9/46d','F5','TEpd','PBr','7m','7B','F2',...
         'STPi','ProM','F7','8B','STPr','24c'});
 ylabel('Timescale');
-legend('Theoretical','Ground Truth');
 alpha(0.7)
 hold off;
 
